@@ -43,6 +43,8 @@ public class BookService {
     public Book updateBook(Long id, String title, String description, String language, int numberOfPages) {
     	Optional<Book> optionalBook = bookRepository.findById(id);
     	if (optionalBook.isPresent()) {
+    		// Or do it like this: 
+    		
 //    		Book book = optionalBook.get();
 //    		book.setTitle(title);
 //    		book.setDescription(description);
